@@ -28,6 +28,12 @@ var options = {
 var key = keyGen.generate(options);
 ```
 
+## Run tests
+
+```sh
+$ make test
+```
+
 ## License
 
 Released fully under [MIT license] (http://viktort.mit-license.org)
