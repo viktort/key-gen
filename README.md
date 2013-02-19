@@ -14,7 +14,9 @@ A lightweight node.js key generation app.
 * process.env.APP_ENCODING
 
 Default values are used if these aren't set and they can be found in config/config.js.
-**Note** Prior to setting the env vars I encourage you to read on [crypto] (http://nodejs.org/api/crypto.html#crypto_crypto_createhmac_algorithm_key)
+
+###Note:
+Prior to setting the env vars I encourage you to read on [crypto] (http://nodejs.org/api/crypto.html#crypto_crypto_createhmac_algorithm_key)
 from the node.js documentation and especially on Hmac class which is used in generating the key here.
 
 ## Installation
@@ -29,8 +31,8 @@ $ npm install key-gen
 var keyGen = require('key-gen');
 
 var options = {
-  prefix = ['identifier1', 'identifier2', 'identifier3'],
-  data   = {
+  prefix: ['identifier1', 'identifier2', 'identifier3'],
+  data: {
     data1: 'data1',
     data2: 'data2',
     data3: 'data3'
@@ -39,6 +41,10 @@ var options = {
 
 var key = keyGen.generate(options);
 ```
+Provided the default config values remain unchanged the above key will equal:
+
+**identifier1:identifier2:identifier3:4c0398bf4e511bef5355c32fd71bc9f1ffcde3b144cf3725dae9062cfaa1ab118d4c984855d38dea8efa00422de45e511c3da710541c7c578ee26037ff1d9a4a**
+
 
 ## Run tests
 
