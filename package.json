@@ -10,7 +10,7 @@
   ],
   "name": "key-gen",
   "description": "Simple key generation tool written in node.js using Hmac algorithm",
-  "homepage": "https://github.com/viktort/node-google-prediction",
+  "homepage": "https://github.com/viktort/key-gen",
   "version": "0.0.1",
   "repository": {
     "url": ""
